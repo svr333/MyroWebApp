@@ -5,7 +5,7 @@ namespace MyroWebApp.Xamarin.Services.Implementations
 {
     public class MyroWebService : IMyroWebService
     {
-        public Grades GetUserCredentials(string key)
+        public Grades GetUserGrades(string key)
         {
             throw new NotImplementedException();
         }

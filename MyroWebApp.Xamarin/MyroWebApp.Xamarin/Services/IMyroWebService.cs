@@ -16,6 +16,6 @@ namespace MyroWebApp.Xamarin.Services
         /// </summary>
         /// <param name="key"></param>
         /// <returns></returns>
-        Grades GetUserCredentials(string key);
+        Grades GetUserGrades(string key);
     }
 }
