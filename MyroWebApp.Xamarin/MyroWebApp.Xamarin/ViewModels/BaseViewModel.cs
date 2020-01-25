@@ -5,12 +5,14 @@ using System.Runtime.CompilerServices;
 
 using Xamarin.Forms;
 using MyroWebApp.Xamarin.Services;
+using MyroWebApp.Xamarin.Entities;
 
 namespace MyroWebApp.Xamarin.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IMyroWebService MyroWeb => DependencyService.Get<IMyroWebService>();
+        public IDataStorage<Profile> ProfileStorage => DependencyService.Get<IDataStorage<Profile>>();
 
         bool isBusy = false;
         public bool IsBusy

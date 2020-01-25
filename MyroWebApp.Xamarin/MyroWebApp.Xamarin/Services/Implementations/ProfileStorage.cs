@@ -11,12 +11,20 @@ namespace MyroWebApp.Xamarin.Services.Implementations
 
         public ProfileStorage()
         {
-            
+            // TODO: Read profiles from storagefile
+        }
+
+        private async Task<bool> SaveItemsAsync()
+        {
+            // TODO: Implement save item
+
+            return await Task.FromResult(true);
         }
 
         public async Task<bool> AddItemAsync(Profile profile)
         {
             _profiles.Add(profile);
+            await SaveItemsAsync();
 
             return await Task.FromResult(true);
         }
@@ -26,6 +34,7 @@ namespace MyroWebApp.Xamarin.Services.Implementations
             var oldItem = _profiles.Where(x => x.Key == profile.Key).FirstOrDefault();
             _profiles.Remove(oldItem);
             _profiles.Add(profile);
+            await SaveItemsAsync();
 
             return await Task.FromResult(true);
         }
@@ -34,6 +43,7 @@ namespace MyroWebApp.Xamarin.Services.Implementations
         {
             var oldItem = _profiles.Where(x => x.Key == key).FirstOrDefault();
             _profiles.Remove(oldItem);
+            await SaveItemsAsync();
 
             return await Task.FromResult(true);
         }
