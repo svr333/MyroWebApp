@@ -1,0 +1,18 @@
+﻿using MyroWebApp.Xamarin.Entities;
+using System;
+
+namespace MyroWebApp.Xamarin.Services.Implementations
+{
+    public class MyroWebService : IMyroWebService
+    {
+        public Grades GetUserCredentials(string key)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RegisterNewUser(string key, User user)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
