@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace MyroWebApp.Xamarin.Services
 {
-    public interface IDataStore<T>
+    public interface IDataStorage<T>
     {
         Task<bool> AddItemAsync(T item);
         Task<bool> UpdateItemAsync(T item);

@@ -2,6 +2,7 @@
 using MyroWebApp.Xamarin.Services;
 using MyroWebApp.Xamarin.Views;
 using MyroWebApp.Xamarin.Services.Implementations;
+using MyroWebApp.Xamarin.Entities;
 
 namespace MyroWebApp.Xamarin
 {
@@ -13,6 +14,7 @@ namespace MyroWebApp.Xamarin
             InitializeComponent();
 
             DependencyService.Register<IMyroWebService, MyroWebService>();
+            DependencyService.Register<IDataStorage<Profile>, ProfileStorage>();
             MainPage = new MainPage();
         }
 
