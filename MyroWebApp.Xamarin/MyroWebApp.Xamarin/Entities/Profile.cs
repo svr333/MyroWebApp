@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MyroWebApp.Xamarin.Entities
+﻿namespace MyroWebApp.Xamarin.Entities
 {
     public class Profile
     {
