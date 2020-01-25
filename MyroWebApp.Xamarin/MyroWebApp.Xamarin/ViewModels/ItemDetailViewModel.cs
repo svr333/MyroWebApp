@@ -1,6 +1,4 @@
-﻿using System;
-
-using MyroWebApp.Xamarin.Models;
+﻿using MyroWebApp.Xamarin.Entities;
 
 namespace MyroWebApp.Xamarin.ViewModels
 {

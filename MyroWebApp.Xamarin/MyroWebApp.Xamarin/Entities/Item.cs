@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MyroWebApp.Xamarin.Models
+﻿namespace MyroWebApp.Xamarin.Entities
 {
     public class Item
     {

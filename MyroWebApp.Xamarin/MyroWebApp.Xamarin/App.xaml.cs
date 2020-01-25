@@ -1,8 +1,7 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 using MyroWebApp.Xamarin.Services;
 using MyroWebApp.Xamarin.Views;
+using MyroWebApp.Xamarin.Services.Implementations;
 
 namespace MyroWebApp.Xamarin
 {
@@ -13,7 +12,7 @@ namespace MyroWebApp.Xamarin
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            DependencyService.Register<IMyroWebService, MyroWebService>();
             MainPage = new MainPage();
         }
 

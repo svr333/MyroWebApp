@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MyroWebApp.Xamarin.Models;
+using MyroWebApp.Xamarin.Entities;
 
 namespace MyroWebApp.Xamarin.Services
 {

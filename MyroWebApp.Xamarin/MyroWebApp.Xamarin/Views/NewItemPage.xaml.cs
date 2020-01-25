@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
-using MyroWebApp.Xamarin.Models;
+using MyroWebApp.Xamarin.Entities;
 
 namespace MyroWebApp.Xamarin.Views
 {

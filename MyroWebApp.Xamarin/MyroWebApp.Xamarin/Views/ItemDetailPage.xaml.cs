@@ -1,9 +1,7 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
-using MyroWebApp.Xamarin.Models;
+using MyroWebApp.Xamarin.Entities;
 using MyroWebApp.Xamarin.ViewModels;
 
 namespace MyroWebApp.Xamarin.Views
@@ -37,3 +35,4 @@ namespace MyroWebApp.Xamarin.Views
         }
     }
 }
+
