@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-using MyroWebApp.Xamarin.Models;
+using MyroWebApp.Xamarin.Entities;
 using MyroWebApp.Xamarin.Views;
 
 namespace MyroWebApp.Xamarin.ViewModels
@@ -39,7 +39,7 @@ namespace MyroWebApp.Xamarin.ViewModels
             try
             {
                 Items.Clear();
-                var items = await DataStore.GetItemsAsync(true);
+                var items = await MyroWeb.
                 foreach (var item in items)
                 {
                     Items.Add(item);

@@ -1,4 +1,4 @@
-﻿namespace MyroWebApp.Xamarin.Enities
+﻿namespace MyroWebApp.Xamarin.Entities
 {
     public enum MenuItemType
     {
