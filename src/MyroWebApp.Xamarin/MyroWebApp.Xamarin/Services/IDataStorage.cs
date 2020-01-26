@@ -5,7 +5,7 @@ namespace MyroWebApp.Xamarin.Services
 {
     public interface IDataStorage<T>
     {
-        T CurrentItem { get;}
+        T Current { get;}
 
         Task<bool> AddItemAsync(T item);
         Task<bool> UpdateItemAsync(T item);

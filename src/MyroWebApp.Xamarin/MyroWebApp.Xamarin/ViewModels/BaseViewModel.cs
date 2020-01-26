@@ -13,6 +13,7 @@ namespace MyroWebApp.Xamarin.ViewModels
     {
         public IMyroWebService MyroWeb => DependencyService.Get<IMyroWebService>();
         public IDataStorage<Profile> ProfileStorage => DependencyService.Get<IDataStorage<Profile>>();
+        public IGradesFormatService GradeFormatService => DependencyService.Get<IGradesFormatService>();
 
         bool isBusy = false;
         public bool IsBusy

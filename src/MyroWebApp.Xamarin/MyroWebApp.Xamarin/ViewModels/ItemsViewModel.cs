@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
+﻿using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using MyroWebApp.Xamarin.Entities;
 using System.Linq;
+using MyroWebApp.Xamarin.Entities.FormattedGrades;
 
 namespace MyroWebApp.Xamarin.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        public ObservableCollection<Term> Terms { get; set; }
+        public ObservableCollection<FormattedTerm> Terms { get; set; }
         public Command LoadItemsCommand { get; set; }
 
         public ItemsViewModel()
@@ -26,8 +24,9 @@ namespace MyroWebApp.Xamarin.ViewModels
             if (IsBusy) { return; }
             IsBusy = true;
 
-            var grades = MyroWeb.GetUserGrades(ProfileStorage.CurrentProfile.Key);
-            Terms = new ObservableCollection<Term>(grades.Terms);
+            var grades = MyroWeb.GetUserFormattedGrades(ProfileStorage.Current.Key);
+
+            Terms = new ObservableCollection<FormattedTerm>(grades.Terms);
 
             IsBusy = false;
 

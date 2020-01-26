@@ -10,7 +10,7 @@ namespace MyroWebApp.Xamarin.Services.Implementations
         private List<Profile> _profiles = new List<Profile>();
         private Profile _currentProfile;
 
-        public Profile CurrentProfile => _currentProfile;
+        public Profile Current => _currentProfile;
 
         public ProfileStorage()
         {
