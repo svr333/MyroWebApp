@@ -1,10 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using MyroWebApp.Xamarin.Entities;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace MyroWebApp.Xamarin.Services
 {
     public interface IDataStorage<T>
     {
+        Profile CurrentProfile { get;}
+
         Task<bool> AddItemAsync(T item);
         Task<bool> UpdateItemAsync(T item);
         Task<bool> DeleteItemAsync(string id);

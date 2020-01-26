@@ -8,6 +8,9 @@ namespace MyroWebApp.Xamarin.Services.Implementations
     public class ProfileStorage : IDataStorage<Profile>
     {
         private List<Profile> _profiles = new List<Profile>();
+        private Profile _currentProfile;
+
+        public Profile CurrentProfile => _currentProfile;
 
         public ProfileStorage()
         {
