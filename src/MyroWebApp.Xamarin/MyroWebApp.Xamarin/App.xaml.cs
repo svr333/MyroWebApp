@@ -15,6 +15,8 @@ namespace MyroWebApp.Xamarin
 
             DependencyService.Register<IMyroWebService, MyroWebService>();
             DependencyService.Register<IDataStorage<Profile>, ProfileStorage>();
+            DependencyService.Register<IGradesFormatService, DefaultGradesFormatService>();
+
             MainPage = new MainPage();
         }
 
