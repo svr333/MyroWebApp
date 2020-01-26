@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyroWebApp.Xamarin.Android"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyroWebApp.Xamarin.iOS", "MyroWebApp.Xamarin\MyroWebApp.Xamarin.iOS\MyroWebApp.Xamarin.iOS.csproj", "{A603B29C-7CF2-416A-AAA1-13776E8A9A15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyroWebApp.Xamarin", "MyroWebApp.Xamarin\MyroWebApp.Xamarin\MyroWebApp.Xamarin.csproj", "{A311C2C3-4714-493B-BEF1-C2A5C91E84BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyroWebApp.Xamarin", "MyroWebApp.Xamarin\MyroWebApp.Xamarin\MyroWebApp.Xamarin.csproj", "{A311C2C3-4714-493B-BEF1-C2A5C91E84BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
