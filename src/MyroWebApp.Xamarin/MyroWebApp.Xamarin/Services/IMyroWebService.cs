@@ -1,4 +1,5 @@
-﻿using MyroWebApp.Xamarin.Entities;
+﻿using MyroWebApp.Xamarin.Entities.FormattedGrades;
+using MyroWebApp.Xamarin.Entities.Grades;
 
 namespace MyroWebApp.Xamarin.Services
 {
@@ -17,5 +18,12 @@ namespace MyroWebApp.Xamarin.Services
         /// <param name="key"></param>
         /// <returns></returns>
         Grades GetUserGrades(string key);
+
+        /// <summary>
+        /// Get user's grade with formatted values for easier display.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        FormattedGrades GetUserFormattedGrades(string key);
     }
 }

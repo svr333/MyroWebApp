@@ -1,4 +1,4 @@
-﻿using MyroWebApp.Xamarin.Entities;
+﻿using MyroWebApp.Xamarin.Entities.Grades;
 using System;
 
 namespace MyroWebApp.Xamarin.Services.Implementations

@@ -1,4 +1,5 @@
-﻿using MyroWebApp.Xamarin.Entities;
+﻿using MyroWebApp.Xamarin.Entities.Grades;
+using MyroWebApp.Xamarin.Entities.FormattedGrades;
 
 namespace MyroWebApp.Xamarin.Services
 {
